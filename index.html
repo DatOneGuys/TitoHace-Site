@@ -1,132 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>Material Design Bootstrap</title>
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
-  <!-- Bootstrap core CSS -->
-  <link href="css/bootstrap.min.css" rel="stylesheet">
-  <!-- Material Design Bootstrap -->
-  <link href="css/mdb.min.css" rel="stylesheet">
-</head>
-<style>
-  html,
-  body,
-  header,
-  .view {
-    height: 100%;
-  }
-  @media (max-width: 740px) {
-    html,
-    body,
-    header,
-    .view {
-      height: 1000px;
-    }
-  }
-  @media (min-width: 800px) and (max-width: 850px) {
-    html,
-    body,
-    header,
-    .view {
-      height: 600px;
-    }
-  }
-</style>
-
-<body>
-
-  <!-- Navigation & Intro -->
-  <header>
-
-    <!-- Intro Section -->
-    <section class="view intro-2" style="background-image: url('https://mdbootstrap.com/img/Photos/Others/architecture.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center center;">
-      <div class="mask rgba-gradient-1">
-        <div class="container h-100 d-flex justify-content-center align-items-center">
-          <div class="row pt-5 mt-3">
-            <div class="col-md-12 wow fadeIn mb-3">
-              <div class="text-center white-text">
-                <ul class="list-unstyled ">
-                  <li>
-                    <h1 class="display-3 mt-md-5 mt-lg-0 mb-5 font-weight-bold white-text wow fadeIn"
-                      data-wow-delay="0.3s">
-                      <strong>COMING SOON</strong>
-                    </h1>
-                  </li>
-                  <li>
-                    <h4 class="white-text description mb-4 wow fadeIn" data-wow-delay="0.4s">Please stay tuned!
-                    </h4>
-
-                <!-- Grid row -->
-                <div class="row mt-5 mb-5 pt-4" id="countdown">
-
-                  <!-- Grid column -->
-                  <div class="col-lg-4 col-md-4">
-                    <hr class="white mx-5">
-                    <h1 class="display-4 font-weight-bold white-text">
-                      <strong id="count-days"></strong>
-                    </h1>
-                    <hr class="white mx-5">
-                    <p class="font-weight-bold spacing">DAYS</p>
-                  </div>
-                  <!-- Grid column -->
-
-                  <!-- Grid column -->
-                  <div class="col-lg-4 col-md-4">
-                    <h1 class="display-4 font-weight-bold white-text rgba-white-light mx-4 py-3 mt-3">
-                      <strong id="count-hours"></strong>
-                    </h1>
-                    <p class="font-weight-bold spacing pt-3">HOURS</p>
-                  </div>
-                  <!-- Grid column -->
-
-                  <!-- Grid column -->
-                  <div class="col-lg-4 col-md-4">
-                    <hr class="white mx-5">
-                    <h1 class="display-4 font-weight-bold white-text">
-                      <strong id="count-minutes"></strong>
-                    </h1>
-                    <hr class="white mx-5">
-                    <p class="font-weight-bold spacing">MINS</p>
-                  </div>
-                  <!-- Grid column -->
-
-                </div>
-                <!-- Grid row -->
-
-              </div>
-            </div>
-          </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Material Design for Bootstrap</title>
+    <!-- MDB icon -->
+    <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <!-- Google Fonts Roboto -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+    />
+    <!-- MDB -->
+    <link rel="stylesheet" href="css/mdb.min.css" />
+  </head>
+  <body>
+    <!-- Start your project here-->
+    <div class="container">
+      <div class="d-flex justify-content-center align-items-center" style="height: 100vh">
+        <div class="text-center">
+          <img
+            class="mb-4"
+            src="https://mdbootstrap.com/img/logo/mdb-transparent-250px.png"
+            style="width: 250px; height: 90px"
+          />
+          <h5 class="mb-3">Thank you for using our product. We're glad you're with us.</h5>
+          <p class="mb-3">MDB Team</p>
+          <a
+            class="btn btn-primary btn-lg"
+            data-mdb-ripple-init
+            href="https://mdbootstrap.com/docs/standard/getting-started/"
+            target="_blank"
+            role="button"
+            >Start MDB tutorial</a
+          >
         </div>
       </div>
-    </section>
+    </div>
+    <!-- End your project here-->
 
-  </header>
-  <!-- Navigation & Intro -->
-
-  <!-- SCRIPTS -->
-  <!-- JQuery -->
-  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
-  <!-- Bootstrap tooltips -->
-  <script type="text/javascript" src="js/popper.min.js"></script>
-  <!-- Bootstrap core JavaScript -->
-  <script type="text/javascript" src="js/bootstrap.min.js"></script>
-  <!-- MDB core JavaScript -->
-  <script type="text/javascript" src="js/mdb.min.js"></script>
-  <!-- jQuery Countdown -->
-  <script type="text/javascript" src="js/jquery.countdown.min.js"></script>
-  <script type="text/javascript">
-    $(document).ready(function () {
-      $('#countdown').countdown('2022/04/02 12:00:00', function (event) {
-        $('#count-days').html(event.strftime('%D'));
-        $('#count-hours').html(event.strftime('%H'));
-        $('#count-minutes').html(event.strftime('%M'));
-      });
-    });
-  </script>
-</body>
-
+    <!-- MDB -->
+    <script type="text/javascript" src="js/mdb.umd.min.js"></script>
+    <!-- Custom scripts -->
+    <script type="text/javascript"></script>
+  </body>
 </html>
